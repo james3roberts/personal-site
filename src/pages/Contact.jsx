@@ -2,7 +2,12 @@ export default function Contact() {
   return (
     <div className="p-8 max-w-2xl mx-auto">
       <h1 className="text-3xl font-bold mb-6 text-center">Contact Me</h1>
-      <form className="space-y-4">
+
+      <form
+        action="https://formspree.io/f/myzjneza"
+        method="POST"
+        className="space-y-4"
+      >
         {/* Name */}
         <div>
           <label
@@ -56,11 +61,6 @@ export default function Contact() {
             placeholder="What can I help you with?"
           ></textarea>
         </div>
-
-        {/* Optional future message area */}
-        <p className="text-green-600 mt-2 hidden">
-          Thanks! I’ll get back to you soon.
-        </p>
 
         {/* Submit */}
         <button
