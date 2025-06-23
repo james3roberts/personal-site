@@ -6,7 +6,8 @@ import Contact from "./pages/Contact";
 import ClientDemo from "./pages/ClientDemo";
 import Landing from "./pages/ClientDemo/landing";
 import Basic from "./pages/ClientDemo/basic";
-import ProLevel from "./pages/ClientDemo/ProLevel";
+import ProLevel from "./pages/clientDemo/ProLevel";
+
 import Prices from "./pages/Prices";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
