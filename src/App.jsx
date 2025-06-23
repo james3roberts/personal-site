@@ -6,7 +6,7 @@ import Contact from "./pages/Contact";
 import ClientDemo from "./pages/ClientDemo";
 import Landing from "./pages/ClientDemo/landing";
 import Basic from "./pages/ClientDemo/basic";
-import ProLevel from "./pages/clientDemo/prolevel"; // ✅ Use capital P
+import ProLevel from "./pages/ClientDemo/prolevel"; // ✅ Fixed path with correct case
 
 import Prices from "./pages/Prices";
 import Navbar from "./components/Navbar";
