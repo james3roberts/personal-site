@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 const tiers = [
   {
-    name: "Landing Page",
+    name: "Starter Site",
 
     path: "/clientDemo/landing",
 
@@ -20,7 +20,7 @@ const tiers = [
     anchor: "landing",
   },
   {
-    name: "Basic Site",
+    name: "Business Site",
     path: "/clientDemo/basic",
     summary: "Best for businesses offering multiple services.",
     price: "$600–$1,000",
@@ -35,7 +35,7 @@ const tiers = [
     anchor: "basic",
   },
   {
-    name: "Pro Level Site",
+    name: "Pro Site",
     path: "/clientDemo/prolevel",
     summary: "For teams ready to grow or look more professional.",
     price: "$1,200–$2,000+",

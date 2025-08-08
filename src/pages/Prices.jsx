@@ -7,7 +7,7 @@ export default function Prices() {
 
       {/* Landing Page Pricing */}
       <section id="landing" className="mb-12">
-        <h2 className="text-2xl font-semibold mb-2">Landing Page</h2>
+        <h2 className="text-2xl font-semibold mb-2">Starter Site</h2>
         <p className="text-gray-700 mb-2">
           Perfect for solo contractors or side businesses. A single-page build
           with contact info, service summary, and SEO setup.
@@ -17,7 +17,7 @@ export default function Prices() {
 
       {/* Basic Site Pricing */}
       <section id="basic" className="mb-12">
-        <h2 className="text-2xl font-semibold mb-2">Basic Site</h2>
+        <h2 className="text-2xl font-semibold mb-2">Business Site</h2>
         <p className="text-gray-700 mb-2">
           Great for companies offering multiple services. 3–5 pages, including
           contact forms and service descriptions.
@@ -27,7 +27,7 @@ export default function Prices() {
 
       {/* Pro Level Site Pricing */}
       <section id="prolevel" className="mb-12">
-        <h2 className="text-2xl font-semibold mb-2">Pro Level Site</h2>
+        <h2 className="text-2xl font-semibold mb-2">Pro Site</h2>
         <p className="text-gray-700 mb-2">
           Full-featured site for established teams. Add-ons like galleries,
           forms, team bios, or blog content.

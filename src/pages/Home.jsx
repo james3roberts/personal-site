@@ -5,12 +5,10 @@ export default function Home() {
     <>
       {/* Hero Section */}
       <div className="p-8 flex flex-col items-center text-center">
-        <h1 className="text-4xl md:text-6xl font-bold mb-4">
-          Hi, I'm Jim Roberts
-        </h1>
+        <h1 className="text-4xl md:text-6xl font-bold mb-4">DKS Works</h1>
         <p className="text-lg md:text-xl text-gray-600 max-w-2xl mb-6">
-          I build clean websites, small tools, and apps that help bridge the gap
-          between trades and tech.
+          I build clean, modern websites for small business owners who want
+          personal service and don’t have time to do it themselves.
         </p>
         <a
           href="/contact"
@@ -25,10 +23,10 @@ export default function Home() {
         <h2 className="text-3xl font-semibold text-center mb-8">What I Do</h2>
         <div className="grid md:grid-cols-3 gap-8">
           <div className="bg-white p-6 rounded-lg shadow hover:shadow-md transition">
-            <h3 className="text-xl font-bold mb-2">Custom Websites</h3>
+            <h3 className="text-xl font-bold mb-2">Starter Site</h3>
             <p className="text-gray-600">
-              I build fast, clean, mobile-friendly websites for small businesses
-              and professionals.
+              For business owners who just need to get online and look legit.
+              Simple, fast, and affordable.
             </p>
             <Link
               to="/clientDemo"
@@ -38,18 +36,31 @@ export default function Home() {
             </Link>
           </div>
           <div className="bg-white p-6 rounded-lg shadow hover:shadow-md transition">
-            <h3 className="text-xl font-bold mb-2">Simple Apps</h3>
+            <h3 className="text-xl font-bold mb-2">Business Site</h3>
             <p className="text-gray-600">
-              From idea to browser, I make tools and apps that solve problems
-              and work fast.
+              A stronger web presence with more sections and services. Perfect
+              for growing businesses that want to stand out.
             </p>
+            <Link
+              to="/clientDemo"
+              className="mt-4 inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+            >
+              View Client Demos
+            </Link>
           </div>
           <div className="bg-white p-6 rounded-lg shadow hover:shadow-md transition">
-            <h3 className="text-xl font-bold mb-2">Future Automation</h3>
+            <h3 className="text-xl font-bold mb-2">Pro Site</h3>
             <p className="text-gray-600">
-              My long game is robotics and tools that bring automation into
-              manual trades.
+              A complete site tailored to your business, built to scale. Ideal
+              for companies ready to invest in automation, SEO, or client
+              interaction.
             </p>
+            <Link
+              to="/clientDemo"
+              className="mt-4 inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+            >
+              View Client Demos
+            </Link>
           </div>
         </div>
       </section>

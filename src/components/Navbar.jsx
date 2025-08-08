@@ -37,7 +37,7 @@ export default function Navbar() {
     <nav className="bg-blue-100 shadow-md">
       <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
         {/* Logo */}
-        <div className="text-2xl font-bold text-blue-700">Jim Roberts</div>
+        <div className="text-2xl font-bold text-blue-700">DKS Works</div>
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center space-x-6">{navLinks}</div>
