@@ -1,42 +1,44 @@
 export default function About() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-16">
-      <h1 className="text-4xl font-bold mb-8 text-center">Professional Websites for Small Businesses</h1>
+      <h1 className="text-4xl font-bold mb-8 text-center">
+        About the Builder Behind the Websites
+      </h1>
+
       <div className="text-gray-800 text-lg leading-relaxed space-y-6">
         <p>
-          After nearly 30 years in construction, I know that{" "}
-          <em>time is money</em> and <em>you get out what you put in</em>. My
-          body was my most-used tool — but unlike a power drill, you can’t just
-          upgrade it. So I decided to start building in a new way: with a
-          keyboard instead of my back.
+          I spent nearly 30 years in construction. I understand long days,
+          tight schedules, demanding customers, and what it takes to keep a
+          small business running. After years of hands-on work, my body had
+          limits — but my drive to build didn’t. So I switched from tools to
+          technology.
         </p>
+
         <p>
-          To make that change, I earned a four-year computer science degree —
-          100% online. The closest program that worked with my schedule was
-          2,000 miles away. No classrooms. No one to bail me out when things
-          broke. I had to debug problems, manage my time, and figure things out
-          solo. That taught me as much as the coursework itself.
+          To make that transition real, I earned a four-year Computer Science
+          degree fully online while working full time. No shortcuts, no in-person
+          help — just me, a laptop, and the determination to learn how to solve
+          problems with code. That experience taught me more about discipline,
+          troubleshooting, and persistence than any classroom ever could.
         </p>
+
         <p>
-          Now, I use those skills to keep doing what I’ve always done: build
-          things that help people.
+          Today, I use that blend of real-world trade experience and software
+          training to build websites for the kinds of businesses I grew up
+          around — the ones that keep towns running.
         </p>
+
         <p>
-          If you’re a business owner, I want to help you grow — by making you
-          easier to find, easier to trust, and easier to hire.
+          Whether you’re a contractor, a shop owner, an accountant, or any other
+          small business, your website should make it easy for people to trust
+          you. My goal is simple: create clean, modern websites that help you
+          look professional, get found online, and bring in steady work.
         </p>
+
         <p>
-          Got an idea for modernizing a hands-on trade? I want to help bring it
-          to life.
-        </p>
-        <p>
-          Whether you’re a one-person crew or a ten-person team, I want to help
-          you spend less time chasing work and more time doing what you’re best
-          at.
-        </p>
-        <p>
-          Building homes was always a team effort. Now, I build websites and
-          digital tools that support the team behind the tools.
+          If you’re ready to upgrade your online presence or get your business
+          online for the first time, I’m here to help you build something that
+          works — the right way.
         </p>
       </div>
     </div>
