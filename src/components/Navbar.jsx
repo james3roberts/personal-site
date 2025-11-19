@@ -27,7 +27,8 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
         
         {/* Logo */}
-        <div className="text-2xl font-bold text-blue-700">DKS Works</div>
+        <div className="text-2xl font-bold text-blue-700">DKS</div>
+        <div className="text-[10px] leading-none text-gray-600">Dumb Kids Society</div>
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center space-x-6">
