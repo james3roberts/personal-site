@@ -42,7 +42,7 @@ export default function Home() {
               you do, and how to contact you. Perfect for new or small operations.
             </p>
             <Link
-              to="/clientDemo"
+              to="/clientDemo/landing"
               className="mt-4 inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
             >
               See Examples
@@ -58,7 +58,7 @@ export default function Home() {
               stand out.
             </p>
             <Link
-              to="/clientDemo"
+              to="/clientDemo/basic"
               className="mt-4 inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
             >
               See Examples
@@ -74,7 +74,7 @@ export default function Home() {
               polished online presence.
             </p>
             <Link
-              to="/clientDemo"
+              to="/clientDemo/prolevel"
               className="mt-4 inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
             >
               See Examples
