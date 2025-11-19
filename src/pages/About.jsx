@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-16">
-      <h1 className="text-4xl font-bold mb-8 text-center">About Me</h1>
+      <h1 className="text-4xl font-bold mb-8 text-center">Professional Websites for Small Businesses</h1>
       <div className="text-gray-800 text-lg leading-relaxed space-y-6">
         <p>
           After nearly 30 years in construction, I know that{" "}
