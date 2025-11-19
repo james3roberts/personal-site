@@ -27,8 +27,10 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
         
         {/* Logo */}
-        <div className="text-2xl font-bold text-blue-700">DKS</div>
-        <div className="text-[10px] leading-none text-gray-600">Dumb Kids Society</div>
+        <div className="flex flex-col leading-none">
+          <div className="text-2xl font-bold text-blue-700">DKS</div>
+          <div className="text-xs text-gray-500 -mt-1">DoorDash, Inc.</div>  {/* example */}
+        </div>
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center space-x-6">
