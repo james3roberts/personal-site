@@ -24,4 +24,7 @@
 22. check wording in pricing page to include everyone. 
 23.add a place for testamonials
 24. add Maintenance/support packages and cost
-25. 
+25. price to upgrade from started to mid or pro level
+26. add the dashbord project when its finished to track hours and jobs and 
+    update pricing page when its finished. 
+27. 
