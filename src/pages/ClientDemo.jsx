@@ -4,48 +4,41 @@ import { useNavigate } from "react-router-dom";
 const tiers = [
   {
     name: "Starter Site",
-
     path: "/clientDemo/landing",
-
-    summary: "Perfect for simple, one-person operations.",
+    summary: "A clean, simple single-page site for one-person or small operations.",
     price: "$300–$500",
-    details: `This single-page layout is perfect for small 
-    businesses that need a clean, simple web presence. 
-    Whether you're a one-person crew or a side hustle looking
-    to grow, a landing page gives customers a quick overview
-    of who you are, what you do, and how to reach you. It's fast 
-    to build, easy to maintain, and affordable — plus it's a big 
-    step up from just having a Facebook page. A custom domain and SEO 
-    setup make it easier for new customers to find you on Google.`,
+    details: `
+      A streamlined single-page layout that gives customers exactly what they need:
+      who you are, what you offer, and how to contact you. Perfect for solo operators
+      or side businesses that need a real web presence instead of relying only on Facebook.
+      Includes custom domain setup and basic SEO so new customers can find you on Google.
+    `,
     anchor: "landing",
   },
   {
     name: "Business Site",
     path: "/clientDemo/basic",
-    summary: "Best for businesses offering multiple services.",
-    price: "$600–$1,000",
-    details: `This option is ideal for small-to-medium companies 
-    offering more than one service or needing room to grow. You’ll 
-    get separate pages for things like services, contact, and 
-    testimonials — which builds trust and improves how search 
-    engines rank your site. It’s still a lightweight build, but 
-    it gives you more space to explain what you do and how you do it. 
-    This level strikes a balance between keeping costs low and showing 
-    customers you're serious.`,
+    summary: "Great for businesses offering multiple services or needing more pages.",
+    price: "$750–$1,200",
+    details: `
+      Ideal for small-to-medium companies with more than one service.
+      Includes 3–5 pages such as Services, About, Contact, and Testimonials.
+      This structure builds trust, improves search visibility, and gives your business
+      room to grow. A strong balance of affordability and professionalism.
+    `,
     anchor: "basic",
   },
   {
     name: "Pro Site",
     path: "/clientDemo/prolevel",
-    summary: "For teams ready to grow or look more professional.",
-    price: "$1,200–$2,000+",
-    details: `Designed for growing companies or established teams, 
-    this full-featured site gives you room to showcase everything you offer. 
-    Think multiple services, team bios, job listings, quote request forms, 
-    before-and-after galleries, or even blog content for SEO. It’s ideal for 
-    businesses who want to dominate local search results and win the trust of 
-    bigger clients. It takes more time to build, but the investment pays off by 
-    bringing in more leads and making your business look polished and professional.`,
+    summary: "A full-featured site built for growing teams and higher traffic.",
+    price: "Starts at $1,500",
+    details: `
+      Designed for established businesses ready to level up. Add-ons may include
+      galleries, team bios, job listings, quote-request forms, project portfolios,
+      or blog content for SEO. This is the best option for companies wanting to
+      dominate local search results and look polished to bigger clients.
+    `,
     anchor: "prolevel",
   },
 ];
@@ -93,7 +86,7 @@ export default function ClientDemo() {
                   href={`/prices#${tier.anchor}`}
                   className="text-sm text-blue-600 hover:underline"
                 >
-                  See pricing for this option →
+                  View pricing for this tier →
                 </a>
               </div>
             </div>
