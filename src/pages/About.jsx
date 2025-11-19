@@ -40,6 +40,16 @@ export default function About() {
           online for the first time, I’m here to help you build something that
           works — the right way.
         </p>
+
+        {/* CTA Section */}
+        <div className="pt-10 text-center">
+          <a
+            href="/contact"
+            className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg text-lg hover:bg-blue-700 transition"
+          >
+            Contact Me Today
+          </a>
+        </div>
       </div>
     </div>
   );
