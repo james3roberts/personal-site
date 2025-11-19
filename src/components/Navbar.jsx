@@ -29,7 +29,7 @@ export default function Navbar() {
         {/* Logo */}
         <div className="flex flex-col leading-none">
           <div className="text-2xl font-bold text-blue-700">DKS</div>
-          <div className="text-xs text-gray-500 -mt-1">DoorDash, Inc.</div>  {/* example */}
+          <div className="text-xs font-bold text-blue-700 -mt-1">DUMB KIDS SOCIETY</div>  {/* example */}
         </div>
 
         {/* Desktop Nav */}
