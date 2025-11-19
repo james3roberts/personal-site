@@ -14,7 +14,7 @@
 12. Does the contact form actually send to you
 13. Are phone numbers clickable on mobile?
 14. Does navigation work properly?
-15.Add favicon (small icon in browser tab
+15.Add favicon (small icon in browser tab)
 16. check working on buttone to make sure everything sound right.
 17 think about adding buttons for services wanted
 18. make pricing page part of the form or have the buttons be sent to the form
@@ -27,4 +27,4 @@
 25. price to upgrade from started to mid or pro level
 26. add the dashbord project when its finished to track hours and jobs and 
     update pricing page when its finished. 
-27. 
+ 
