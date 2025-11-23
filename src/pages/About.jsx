@@ -42,10 +42,10 @@ export default function About() {
         </p>
 
         {/* CTA Section */}
-        <link>
+        <link
          to="/contact"
           className="bg-blue-600 text-white px-6 py-3 rounded-lg text-lg hover:bg-blue-700 transition"
-        
+        >
           Contact Me Today
         </link>
       </div>
