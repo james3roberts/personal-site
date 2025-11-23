@@ -196,7 +196,7 @@ export default function Prices() {
           )}&maintenance=${maintenance}&min=${min}&max=${max}`}
           className="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg text-lg hover:bg-blue-700 transition"
         >
-          Get a Free Quote
+          Lets talk about these selections
         </a>
       </div>
     </div>
