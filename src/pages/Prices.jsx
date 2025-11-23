@@ -18,7 +18,7 @@ export default function Prices() {
     gallery: [75, 75],
     blog: [150, 150],
     forms: [50, 100],
-    Google My Business: [75, 75],
+    googleMyBusiness: [75, 75],
   };
 
   const maintenancePrices = {
