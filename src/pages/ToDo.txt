@@ -1,40 +1,28 @@
 /////*****do next *****\\\\\
-modify your contact page to get new info from price page
-add payment scheduel to bottom of price page
-contact me on home page not working
-on price page add what the different support packages include 
-on price page add details to what each add on insights  
-    (example gallery is that linked to a folder that will pull photos 
-    or is that just the ones you send)
-
-//1. Define business name. 
-2. add meta tags. 
-//3. add footer // maybe still need to look up
-//4. add sticky nav bar
-//5. remove demo pages/ or hurry up and build or at least link to pages for demos. 
-//6. the see examples need to go straight to the demo page not to the basic client demo page. 
- 7. get more detailed with the styling ( photos, better backgrounds, more colors 
+!Need to check!     modify your contact page to get new info from price page
+!Need to check!     add payment scheduel to bottom of price page
+!Need to check!     contact me on home page not working
+!Need to check!     on price page add what the different support packages include 
+Get business name small so it almost looks like an underline 
+get more detailed with the styling ( photos, better backgrounds, more colors 
     and clean changing)
-8. Optimize with meta titles/descriptions
-10. Think about adding more content.
-11. Does the contact form actually send to you
-12. Are phone numbers clickable on mobile?
-14. Does navigation work properly?
-15.Add favicon (small icon in browser tab)
-16. check wording on buttone to make sure everything sound right.
-//17 think about adding buttons for services wanted
-//18. make pricing page part of the form or have the buttons be sent to the form
-19. Add how long it will take to deliever
-20. add a most popular badge. 
-//22. check wording in pricing page to include everyone. 
-23.add a place for testamonials
-24. add Maintenance/support packages and cost
-25. price to upgrade from started to mid or pro level
-26. add the dashbord project when its finished to track hours and jobs and 
-    update pricing page when its finished. 
-27. add Privacy Policy and Terms and Conditions to the footer
+Think about adding more content.
+Does the contact form actually send to you
+Are phone numbers clickable on mobile?
+Does navigation work properly?
+Add favicon (small icon in browser tab)
+check wording on buttone to make sure everything sound right.
+dd how long it will take to deliever
+add a most popular badge.  
+add a place for testamonials
+price to upgrade from started to mid or pro level
+add the dashbord project 
+update pricing page to include dashboard 
+add Privacy Policy and Terms and Conditions to the footer
+view pricing link is broken
 
 //////////**********Add this when everything else is finished**********\\\\\\\\\\
-7. add social links that can be turned on or off (put in the footer. )
-9.Hook up Google Analytics/Tag Manager for traffic insights, and Hotjar for heatmaps 
+ add social links that can be turned on or off (put in the footer. )
+Hook up Google Analytics/Tag Manager for traffic insights, and Hotjar for heatmaps 
     to see what visitors click.
+Optimize with meta titles/descriptions
