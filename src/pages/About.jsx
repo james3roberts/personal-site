@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function About() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-16">
@@ -42,12 +44,14 @@ export default function About() {
         </p>
 
         {/* CTA Section */}
-        <link
-         to="/contact"
-          className="bg-blue-600 text-white px-6 py-3 rounded-lg text-lg hover:bg-blue-700 transition"
-        >
-          Contact Me Today
-        </link>
+        <div className="text-center mt-6">
+          <Link
+            to="/contact"
+            className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg text-lg hover:bg-blue-700 transition"
+          >
+            Contact Me Today
+          </Link>
+        </div>
       </div>
     </div>
   );
