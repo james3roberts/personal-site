@@ -1,8 +1,4 @@
 /////*****do next *****\\\\\
-!Need to check!     modify your contact page to get new info from price page
-!Need to check!     add payment scheduel to bottom of price page
-!Need to check!     contact me on home page not working
-!Need to check!     on price page add what the different support packages include 
 Get business name small so it almost looks like an underline 
 get more detailed with the styling ( photos, better backgrounds, more colors 
     and clean changing)
@@ -12,14 +8,13 @@ Are phone numbers clickable on mobile?
 Does navigation work properly?
 Add favicon (small icon in browser tab)
 check wording on buttone to make sure everything sound right.
-dd how long it will take to deliever
-add a most popular badge.  
+dd how long it will take to deliever  
 add a place for testamonials
 price to upgrade from started to mid or pro level
 add the dashbord project 
 update pricing page to include dashboard 
 add Privacy Policy and Terms and Conditions to the footer
-view pricing link is broken
+
 
 //////////**********Add this when everything else is finished**********\\\\\\\\\\
  add social links that can be turned on or off (put in the footer. )
