@@ -7,17 +7,12 @@ CLIENT DEMO PAGE
 
 DEMO PAGES
     LANDING
-        services and contact info needs to be centered
-        Need to add some color differences to split it up
+        
     BASIC
-        Need to start at the top of the page
-        need the nav bar to be different color
-        contact up needs centered
-        Need to add some color differences to split it up
+        
     pro
-        Needs to start at top of page
-        Need to add some color differences to split it up
-        need the nav bar to be different color
+
+
 HOME
     Add some color to get rid of the blank gray screen
 
