@@ -27,6 +27,8 @@ function App() {
           <Route path="/clientDemo/basic" element={<Basic />} />
           <Route path="/clientDemo/ProLevel" element={<ProLevel />} />
           <Route path="/prices" element={<Prices />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/terms" element={<Terms />} />
         </Routes>
       </main>
       <Footer />
