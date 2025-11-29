@@ -26,11 +26,30 @@ export default function Navbar() {
     <nav className="sticky top-0 z-50 bg-blue-100 shadow-md">
       <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
         
-        {/* Logo */}
+        {/*Logo
         <div className="flex flex-col leading-none">
           <div className="text-2xl font-bold text-blue-700">DKS</div>
-          <div className="text-xxs font-bold text-blue-850 -mt-1">DUMB KIDS SOCIETY</div>  {/* example */}
-        </div>
+          <div className="text-xxs font-bold text-blue-850 -mt-1">DUMB KIDS SOCIETY</div>  
+        </div> */}
+
+         {/* Logo */}
+<div className="flex flex-col leading-none">
+  <div className="text-2xl font-bold text-blue-700">DKS</div>
+
+  {/* Hidden-in-plain-sight subtext */}
+  <div className="
+    text-[6px] 
+    font-semibold 
+    text-neutral-700 
+    opacity-30 
+    tracking-tight 
+    -mt-1
+    blur-[0.2px]
+  ">
+    DUMB KIDS SOCIETY
+  </div>
+</div>
+
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center space-x-6">
