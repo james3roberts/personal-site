@@ -71,7 +71,7 @@ import Basic from "./pages/ClientDemo/basic";       // lowercase matches filenam
 import ProLevel from "./pages/ClientDemo/prolevel"; // lowercase matches filename
 
 import Privacy from "./pages/Privacy"; // matches exact casing
-import Terms from "./pages/Terms";     // matches exact casing
+import Terms from "./pages/TermsPages";     // matches exact casing
 
 import Prices from "./pages/Prices";
 import Navbar from "./components/Navbar";
