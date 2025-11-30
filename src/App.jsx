@@ -19,6 +19,7 @@ import Prices from "./pages/Prices";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 
+
 // Layout
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
