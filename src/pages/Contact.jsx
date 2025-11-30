@@ -205,7 +205,7 @@ export default function Contact() {
           <div className="text-center p-6 bg-gray-50 rounded-lg">
             <div className="text-3xl mb-2">✉️</div>
             <h3 className="font-semibold mb-2">Email</h3>
-            <a href="mailto:jim@dksworks.com" className="text-blue-600 text-lg hover:underline break-all">
+            <a href="mailto:james.dksllc@gmail.com" className="text-blue-600 text-lg hover:underline break-all">
               jim@dksworks.com
             </a>
             <p className="text-sm text-gray-600 mt-1">24-hour response</p>
