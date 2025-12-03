@@ -51,7 +51,7 @@ export default function Contact() {
         window.scrollTo({ top: 0, behavior: "smooth" });
       }
     } catch (error) {
-      alert("Something went wrong. Please try emailing me directly at jim@dksworks.com");
+      alert("Something went wrong. Please try emailing me directly at James.dksllc@gmail.com");
     }
   };
 
@@ -206,7 +206,7 @@ export default function Contact() {
             <div className="text-3xl mb-2">✉️</div>
             <h3 className="font-semibold mb-2">Email</h3>
             <a href="mailto:james.dksllc@gmail.com" className="text-blue-600 text-lg hover:underline break-all">
-              jim@dksworks.com
+              james.dksllc@gmail.com
             </a>
             <p className="text-sm text-gray-600 mt-1">24-hour response</p>
           </div>
