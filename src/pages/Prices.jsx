@@ -18,10 +18,10 @@ export default function Prices() {
   const addonPrices = {
     logo: { price: [50, 150], description: "Logo cleanup or simple redesign" },
     extraPages: { price: [75, 150], description: "Extra pages beyond package" },
-    gallery: { price: [75, 75], description: "Photo gallery setup" },
+    gallery: { price: [75], description: "Photo gallery setup" },
     blog: { price: [150, 150], description: "Blog setup" },
     forms: { price: [50, 100], description: "Additional forms" },
-    googleBusiness: { price: [75, 75], description: "Google Business Profile setup" },
+    googleBusiness: { price: [75], description: "Google Business Profile setup" },
   };
 
   const maintenancePrices = {

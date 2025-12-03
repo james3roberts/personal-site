@@ -1,53 +1,5 @@
-/////*****do next *****\\\\\
-CLIENT DEMO PAGE
-    page descriptions need to dropdown on hover
-    links to price page broken
-    change color of backgrounds to add detail
-    add average time it takes to build
-
-DEMO PAGES
-    LANDING
-        
-    BASIC
-        
-    pro
-
-
-HOME
-    Add some color to get rid of the blank gray screen
-
-ABOUT 
-    change the backgrounmd color a bit to break up the screen
-
-NAVBAR 
-    Get business name small so it almost looks like an underline 
-    Work on colors
-    working on the spacing of the buttons
-
-PRICES
-    Add color to spice it up (maybe different colors for different areas)
-    add cost to go from one level to another??
-    
-
-CONTACT
-    after we send the form we click go back it brings us back to the form we just sent CHANGE this
-    see where the contact form is being sent 
-    make sure that the contact form works on mobil almost
-    change the header from contact me to something funner
-
-PROJECT 
-    Add some color to break up the page
-    Add a place for testamonials next to a thubnail of their site
-    seperate sites in a gride 
-    
-
-
-OVERALL TO ADD AND LOOK INTO 
-    Add favicon (small icon in browser tab)
-
-
 //////////**********Add this when everything else is finished**********\\\\\\\\\\
- add social links that can be turned on or off (put in the footer. )
+add social links that can be turned on or off (put in the footer. )
 Hook up Google Analytics/Tag Manager for traffic insights, and Hotjar for heatmaps 
     to see what visitors click.
 Optimize with meta titles/descriptions
