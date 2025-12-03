@@ -4,10 +4,12 @@ import { useLocation } from "react-router-dom";
 export default function Contact() {
   const location = useLocation();
   const [submitted, setSubmitted] = useState(false);
-  
+
   const searchParams = new URLSearchParams(location.search);
   const packageType = searchParams.get("package");
-  const addons = searchParams.get("addons") ? searchParams.get("addons").split(",") : [];
+  const addons = searchParams.get("addons")
+    ? searchParams.get("addons").split(",")
+    : [];
   const maintenance = searchParams.get("maintenance");
   const min = searchParams.get("min");
   const max = searchParams.get("max");
@@ -17,14 +19,24 @@ export default function Contact() {
   useEffect(() => {
     if (packageType) {
       let msg = `I am interested in the following package:\n\n`;
-      msg += `Package: ${packageType.charAt(0).toUpperCase() + packageType.slice(1)}\n`;
+      msg += `Package: ${
+        packageType.charAt(0).toUpperCase() + packageType.slice(1)
+      }\n`;
       if (addons.length) {
-        msg += `Add-Ons: ${addons.map(a => a.replace(/([A-Z])/g, " $1").replace(/^./, s => s.toUpperCase())).join(", ")}\n`;
+        msg += `Add-Ons: ${addons
+          .map((a) =>
+            a.replace(/([A-Z])/g, " $1").replace(/^./, (s) => s.toUpperCase())
+          )
+          .join(", ")}\n`;
       }
       if (maintenance) {
-        msg += `Maintenance: ${maintenance.charAt(0).toUpperCase() + maintenance.slice(1)}\n`;
+        msg += `Maintenance: ${
+          maintenance.charAt(0).toUpperCase() + maintenance.slice(1)
+        }\n`;
       }
-      msg += `Estimated Total: $${Number(min).toLocaleString()} – $${Number(max).toLocaleString()}\n\n`;
+      msg += `Estimated Total: $${Number(min).toLocaleString()} – $${Number(
+        max
+      ).toLocaleString()}\n\n`;
       msg += `Additional details:`;
       setMessage(msg);
     }
@@ -47,11 +59,12 @@ export default function Contact() {
       if (response.ok) {
         setSubmitted(true);
         form.reset();
-        // Scroll to top to see success message
         window.scrollTo({ top: 0, behavior: "smooth" });
       }
     } catch (error) {
-      alert("Something went wrong. Please try emailing me directly at James.dksllc@gmail.com");
+      alert(
+        "Something went wrong. Please try emailing me directly at James.dksllc@gmail.com"
+      );
     }
   };
 
@@ -61,16 +74,13 @@ export default function Contact() {
       <div className="p-8 max-w-2xl mx-auto">
         <div className="bg-green-50 border-2 border-green-500 rounded-lg p-8 text-center">
           <div className="text-6xl mb-4">✓</div>
-          <h1 className="text-3xl font-bold mb-4 text-green-800">Message Sent!</h1>
+          <h1 className="text-3xl font-bold mb-4 text-green-800">
+            Message Sent!
+          </h1>
           <p className="text-lg text-gray-700 mb-6">
             Thanks for reaching out! I'll get back to you within 24 hours.
           </p>
-          <p className="text-gray-600 mb-6">
-            Need faster response? Call me directly:{" "}
-            <a href="tel:719-555-0123" className="text-blue-600 font-bold hover:underline">
-              (719) 555-0123
-            </a>
-          </p>
+
           <button
             onClick={() => setSubmitted(false)}
             className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition"
@@ -84,7 +94,9 @@ export default function Contact() {
 
   return (
     <div className="p-8 max-w-2xl mx-auto">
-      <h1 className="text-3xl font-bold mb-2 text-center">Let's Talk About Your Project</h1>
+      <h1 className="text-3xl font-bold mb-2 text-center">
+        Let's Talk About Your Project
+      </h1>
       <p className="text-center text-gray-600 mb-8">
         Fill out the form below and I'll get back to you within 24 hours
       </p>
@@ -92,7 +104,10 @@ export default function Contact() {
       <form onSubmit={handleSubmit} className="space-y-4">
         {/* Name */}
         <div>
-          <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
+          <label
+            htmlFor="name"
+            className="block text-sm font-medium text-gray-700 mb-1"
+          >
             Name *
           </label>
           <input
@@ -107,7 +122,10 @@ export default function Contact() {
 
         {/* Email */}
         <div>
-          <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+          <label
+            htmlFor="email"
+            className="block text-sm font-medium text-gray-700 mb-1"
+          >
             Email *
           </label>
           <input
@@ -120,24 +138,29 @@ export default function Contact() {
           />
         </div>
 
-        {/* Phone */}
+        {/* OPTIONAL Phone */}
         <div>
-          <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
-            Phone Number *
+          <label
+            htmlFor="phone"
+            className="block text-sm font-medium text-gray-700 mb-1"
+          >
+            Phone Number (optional)
           </label>
           <input
             id="phone"
             name="phone"
             type="tel"
-            required
             className="block w-full border border-gray-300 rounded-md shadow-sm p-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-            placeholder="(719) 555-0123"
+            placeholder="If you'd like me to call you back"
           />
         </div>
 
         {/* Project Type */}
         <div>
-          <label htmlFor="project" className="block text-sm font-medium text-gray-700 mb-1">
+          <label
+            htmlFor="project"
+            className="block text-sm font-medium text-gray-700 mb-1"
+          >
             What type of project do you need? *
           </label>
           <select
@@ -158,7 +181,10 @@ export default function Contact() {
 
         {/* Message */}
         <div>
-          <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
+          <label
+            htmlFor="message"
+            className="block text-sm font-medium text-gray-700 mb-1"
+          >
             Tell me about your project *
           </label>
           <textarea
@@ -180,42 +206,33 @@ export default function Contact() {
         >
           Send Message
         </button>
-
-        <p className="text-xs text-center text-gray-500">
-          I typically respond within 24 hours. Need faster? Call{" "}
-          <a href="tel:719-555-0123" className="text-blue-600 hover:underline">
-            (719) 555-0123
-          </a>
-        </p>
       </form>
 
       {/* Alternative Contact Methods */}
       <div className="mt-12 pt-8 border-t border-gray-200">
-        <h2 className="text-xl font-bold mb-4 text-center">Other Ways to Reach Me</h2>
-        <div className="grid md:grid-cols-2 gap-6">
-          <div className="text-center p-6 bg-gray-50 rounded-lg">
-            <div className="text-3xl mb-2">📞</div>
-            <h3 className="font-semibold mb-2">Call or Text</h3>
-            <a href="tel:719-555-0123" className="text-blue-600 text-lg hover:underline">
-              (719) 555-0123
-            </a>
-            <p className="text-sm text-gray-600 mt-1">Mon-Fri 8AM-6PM</p>
-          </div>
-          
-          <div className="text-center p-6 bg-gray-50 rounded-lg">
-            <div className="text-3xl mb-2">✉️</div>
-            <h3 className="font-semibold mb-2">Email</h3>
-            <a href="mailto:james.dksllc@gmail.com" className="text-blue-600 text-lg hover:underline break-all">
-              james.dksllc@gmail.com
-            </a>
-            <p className="text-sm text-gray-600 mt-1">24-hour response</p>
-          </div>
+        <h2 className="text-xl font-bold mb-4 text-center">
+          Other Ways to Reach Me
+        </h2>
+
+        <div className="max-w-md mx-auto p-6 bg-gray-50 rounded-lg text-center">
+          <div className="text-3xl mb-2">✉️</div>
+          <h3 className="font-semibold mb-2">Email</h3>
+          <a
+            href="mailto:james.dksllc@gmail.com"
+            className="text-blue-600 text-lg hover:underline break-all"
+          >
+            james.dksllc@gmail.com
+          </a>
+          <p className="text-sm text-gray-600 mt-1">24-hour response time</p>
         </div>
-        
+
         <div className="text-center mt-6">
           <p className="text-gray-600">
-            📍 Based in Colorado Springs, CO<br />
-            <span className="text-sm">Available for local and remote projects</span>
+            📍 Based in Colorado Springs, CO
+            <br />
+            <span className="text-sm">
+              Available for local and remote projects
+            </span>
           </p>
         </div>
       </div>
