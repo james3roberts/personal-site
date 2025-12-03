@@ -18,10 +18,10 @@ export default function Prices() {
   const addonPrices = {
     logo: { price: [50, 150], description: "Logo cleanup or simple redesign" },
     extraPages: { price: [75, 150], description: "Extra pages beyond package" },
-    gallery: { price: [75], description: "Photo gallery setup" },
-    blog: { price: [150], description: "Blog setup" },
+    gallery: { price: 75, description: "Photo gallery setup" },
+    blog: { price: 75, description: "Blog setup" },
     forms: { price: [50, 100], description: "Additional forms" },
-    googleBusiness: { price: [75], description: "Google Business Profile setup" },
+    googleBusiness: { price: 75, description: "Google Business Profile setup" },
   };
 
   const maintenancePrices = {
@@ -31,11 +31,13 @@ export default function Prices() {
     },
     priority: {
       price: 50,
-      description: "Everything in Basic, faster response, plugin updates & minor bug fixes",
+      description:
+        "Everything in Basic, faster response, plugin updates & minor bug fixes",
     },
     full: {
       price: 100,
-      description: "Everything in Priority, full site updates, advanced SEO monitoring, custom functionality support",
+      description:
+        "Everything in Priority, full site updates, advanced SEO monitoring, custom functionality support",
     },
   };
 
@@ -50,8 +52,14 @@ export default function Prices() {
     }
 
     addons.forEach((addon) => {
-      min += addonPrices[addon].price[0];
-      max += addonPrices[addon].price[1];
+      const price = addonPrices[addon].price;
+      if (Array.isArray(price)) {
+        min += price[0];
+        max += price[1];
+      } else {
+        min += price;
+        max += price;
+      }
     });
 
     if (maintenance) {
@@ -87,7 +95,8 @@ export default function Prices() {
               value={pkg}
               onChange={() => setPackageType(pkg)}
             />{" "}
-            {pkg.charAt(0).toUpperCase() + pkg.slice(1)} Site (${packagePrices[pkg][0]} – ${packagePrices[pkg][1]})
+            {pkg.charAt(0).toUpperCase() + pkg.slice(1)} Site ($
+            {packagePrices[pkg][0]} – ${packagePrices[pkg][1]})
           </label>
         ))}
       </div>
@@ -95,19 +104,26 @@ export default function Prices() {
       {/* Add-ons */}
       <div className="mb-8">
         <h2 className="text-2xl font-semibold mb-3">Optional Add-Ons</h2>
-        {Object.keys(addonPrices).map((key) => (
-          <div key={key} className="mb-2">
-            <label className="block">
-              <input
-                type="checkbox"
-                checked={addons.includes(key)}
-                onChange={() => toggleAddon(key)}
-              />{" "}
-              {key.replace(/([A-Z])/g, " $1").replace(/^./, (s) => s.toUpperCase())} — ${addonPrices[key].price[0]}–${addonPrices[key].price[1]}
-            </label>
-            <p className="text-gray-600 ml-6">{addonPrices[key].description}</p>
-          </div>
-        ))}
+        {Object.keys(addonPrices).map((key) => {
+          const price = addonPrices[key].price;
+          const priceDisplay = Array.isArray(price)
+            ? `$${price[0]}–$${price[1]}`
+            : `$${price}`;
+          return (
+            <div key={key} className="mb-2">
+              <label className="block">
+                <input
+                  type="checkbox"
+                  checked={addons.includes(key)}
+                  onChange={() => toggleAddon(key)}
+                />{" "}
+                {key.replace(/([A-Z])/g, " $1").replace(/^./, (s) => s.toUpperCase())} —{" "}
+                {priceDisplay}
+              </label>
+              <p className="text-gray-600 ml-6">{addonPrices[key].description}</p>
+            </div>
+          );
+        })}
       </div>
 
       {/* Maintenance */}
@@ -161,11 +177,17 @@ export default function Prices() {
               <p><strong>Add-Ons:</strong></p>
               {addons.length > 0 ? (
                 <ul className="ml-4 list-disc">
-                  {addons.map((addon) => (
-                    <li key={addon}>
-                      {addon.replace(/([A-Z])/g, " $1").replace(/^./, (s) => s.toUpperCase())} — {addonPrices[addon].description} (${addonPrices[addon].price[0]}–${addonPrices[addon].price[1]})
-                    </li>
-                  ))}
+                  {addons.map((addon) => {
+                    const price = addonPrices[addon].price;
+                    const priceDisplay = Array.isArray(price)
+                      ? `$${price[0]}–$${price[1]}`
+                      : `$${price}`;
+                    return (
+                      <li key={addon}>
+                        {addon.replace(/([A-Z])/g, " $1").replace(/^./, (s) => s.toUpperCase())} — {addonPrices[addon].description} ({priceDisplay})
+                      </li>
+                    );
+                  })}
                 </ul>
               ) : (
                 <p className="ml-4">None</p>
