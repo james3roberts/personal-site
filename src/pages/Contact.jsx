@@ -63,7 +63,7 @@ export default function Contact() {
       }
     } catch (error) {
       alert(
-        "Something went wrong. Please try emailing me directly at James.JRCllc@gmail.com",
+        "Something went wrong. Please try emailing me directly at JimRobertsConstruction@gmail.com",
       );
     }
   };
@@ -78,7 +78,7 @@ export default function Contact() {
             Message Sent!
           </h1>
           <p className="text-lg text-gray-700 mb-6">
-            Thanks for reaching out! I'll get back to you within 24 hours.
+            Thanks for reaching out! I'll get back to you soon.
           </p>
 
           <button
@@ -98,7 +98,7 @@ export default function Contact() {
         Let's Talk About Your Project
       </h1>
       <p className="text-center text-gray-600 mb-8">
-        Fill out the form below and I'll get back to you within 24 hours
+        Fill out the form below and I'll get back to you soon.
       </p>
 
       <form onSubmit={handleSubmit} className="space-y-4">
@@ -218,12 +218,12 @@ export default function Contact() {
           <div className="text-3xl mb-2">✉️</div>
           <h3 className="font-semibold mb-2">Email</h3>
           <a
-            href="mailto:james.JRCllc@gmail.com"
+            href="mailto:JimRobertsConstruction@gmail.com"
             className="text-blue-600 text-lg hover:underline break-all"
           >
-            james.JRCllc@gmail.com
+            JimRobertsConstruction@gmail.com
           </a>
-          <p className="text-sm text-gray-600 mt-1">24-hour response time</p>
+          {/* <p className="text-sm text-gray-600 mt-1">24-hour response time</p> */}
         </div>
 
         <div className="text-center mt-6">
