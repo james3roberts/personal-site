@@ -32,7 +32,7 @@ PHASE 1 — BRANDING
 PHASE 2 — QUICK SITE POLISH
 ============================================================
 
-[O] Replace default Vite favicon at index.html line 5
+[X] Replace default Vite favicon at index.html line 5
 [O] Create/use a proper JRC favicon
 [x] Check browser tab title
 [x] Check desktop layout
