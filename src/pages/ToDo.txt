@@ -1,7 +1,425 @@
-//////////**********Add this when everything else is finished**********\\\\\\\\\\
-add social links that can be turned on or off (put in the footer. )
-Hook up Google Analytics/Tag Manager for traffic insights, and Hotjar for heatmaps 
-    to see what visitors click.
-Optimize with meta titles/descriptions
+============================================================
+JRC WEBSITE — MASTER TO-DO LIST
+============================================================
 
-Later add time tracking and or dashboard once it is built up more. 
+GOAL:
+Launch a professional, simple, human-feeling JRC website,
+then improve it gradually as the business grows.
+
+GUIDING PRINCIPLE:
+Small wins. Get things working and live rather than
+over-engineering everything before launch.
+
+
+============================================================
+PHASE 1 — BRANDING
+============================================================
+
+[x] Change DKS branding to JRC
+[x] Change "DUMB KIDS SOCIETY" to "Jim Roberts Construction"
+[x] Update site title from DKS to JRC
+[x] Commit branding changes to Git
+[x] Push branding changes to GitHub
+
+[ ] Center JRC / Jim Roberts Construction properly in navbar
+[ ] Finalize logo treatment
+[ ] Finalize primary JRC colors
+[ ] Make sure branding is consistent throughout the site
+
+
+============================================================
+PHASE 2 — QUICK SITE POLISH
+============================================================
+
+[ ] Replace default Vite favicon
+[ ] Create/use a proper JRC favicon
+[ ] Check browser tab title
+[ ] Check desktop layout
+[ ] Check mobile layout
+[ ] Check tablet-sized layout
+[ ] Check navbar on mobile
+[ ] Check buttons and links
+[ ] Check footer
+[ ] Check all navigation links
+[ ] Check for broken links
+[ ] Check for obvious placeholder text
+[ ] Remove/update old DKS references
+[ ] Remove unnecessary demo/placeholder content from public pages
+[ ] Make sure phone/email information is correct
+[ ] Make sure business name is correct everywhere
+
+
+============================================================
+PHASE 3 — NAVIGATION
+============================================================
+
+[ ] Review navbar layout
+[ ] Review navbar spacing
+[ ] Center JRC branding
+[ ] Review mobile menu
+[ ] Review active-page indicators
+[ ] Review navigation labels
+[ ] Decide whether Client Demo should remain public
+[ ] Consider adding Resources
+[ ] Consider adding "I Built This"
+[ ] Make sure every navigation link works
+
+
+============================================================
+PHASE 4 — HOMEPAGE
+============================================================
+
+[ ] Review homepage wording
+[ ] Make JRC personality stronger
+[ ] Make primary call-to-action obvious
+[ ] Review "Website Options" section
+[ ] Make package differences easy to understand
+[ ] Review "Why I Build Websites" section
+[ ] Add stronger trust/credibility information
+[ ] Consider adding construction-to-software story
+[ ] Consider adding AI explanation
+[ ] Add/update imagery when appropriate
+[ ] Make homepage clearly aimed at real small businesses
+
+
+============================================================
+PHASE 5 — CONTACT PAGE
+============================================================
+
+[ ] Review existing contact form
+[ ] Shorten form
+[ ] Keep only useful questions
+[ ] Verify form still submits correctly
+[ ] Test successful submission
+[ ] Test on mobile
+[ ] Make confirmation/success message clear
+[ ] Make contact information easy to find
+[ ] Decide whether to add "How did you hear about us?"
+[ ] Decide where contact submissions should go
+
+
+============================================================
+PHASE 6 — SERVICES / PRICING
+============================================================
+
+[ ] Review Starter package
+[ ] Review Business package
+[ ] Review Pro package
+[ ] Make package pricing understandable
+[ ] Explain what is included with each package
+[ ] Explain what makes each level different
+[ ] Clarify that custom work can be discussed
+[ ] Consider adding Website Care / maintenance plan
+[ ] Consider $100/month Website Care option
+[ ] Explain ongoing hosting/maintenance/support
+[ ] Make package CTAs consistent
+
+
+============================================================
+PHASE 7 — ABOUT PAGE
+============================================================
+
+[ ] Review About page
+[ ] Make personal story sound natural
+[ ] Explain transition from construction/equipment work
+    to software/web development
+[ ] Explain why JRC focuses on small businesses
+[ ] Make page feel human rather than corporate
+[ ] Add photo when appropriate
+[ ] Add relevant skills/experience
+[ ] Add credibility without making the page feel like a resume
+
+
+============================================================
+PHASE 8 — PROJECTS / PORTFOLIO
+============================================================
+
+[ ] Review Projects page
+[ ] Decide how portfolio projects should be displayed
+[ ] Add first real customer project
+[ ] Add project screenshots
+[ ] Add short project descriptions
+[ ] Explain what JRC built
+[ ] Explain problems solved
+[ ] Add customer testimonial
+[ ] Add link to live customer site
+[ ] Add additional projects as completed
+[ ] Eventually organize projects by type/industry
+
+
+============================================================
+PHASE 9 — LEGAL / BASIC SEO
+============================================================
+
+[ ] Review Privacy page
+[ ] Review Terms page
+[ ] Make sure legal/business information is appropriate
+[ ] Add proper page titles
+[ ] Add meta descriptions
+[ ] Review heading structure
+[ ] Make sure each important page has a useful title
+[ ] Add descriptive image alt text
+[ ] Check URLs/routes
+[ ] Create sitemap
+[ ] Create robots.txt
+[ ] Make sure search engines can crawl the site
+[ ] Check for duplicate/poor metadata
+
+
+============================================================
+PHASE 10 — DOMAIN / LAUNCH
+============================================================
+
+[ ] Purchase JRobertsC.com
+[ ] Connect JRobertsC.com to Netlify
+[ ] Configure DNS
+[ ] Verify HTTPS/SSL
+[ ] Set preferred domain
+[ ] Verify www/non-www behavior
+[ ] Make sure Netlify deployment works
+[ ] Verify production site on desktop
+[ ] Verify production site on phone
+[ ] Test every major link
+[ ] Test contact form on production
+[ ] Verify favicon on production
+[ ] Verify page titles
+[ ] Verify social/share preview if applicable
+[ ] Set up Google Search Console
+[ ] Verify ownership
+[ ] Submit sitemap
+[ ] Perform final launch check
+[ ] OFFICIALLY LAUNCH JRC WEBSITE
+
+
+============================================================
+PHASE 11 — BUSINESS BASICS AFTER LAUNCH
+============================================================
+
+[ ] Set up professional email
+[ ] Consider jim@jrobertsc.com
+[ ] Consider info@jrobertsc.com
+[ ] Create simple Google Sheet CRM/prospect tracker
+[ ] Track potential customers
+[ ] Track contacted businesses
+[ ] Track follow-ups
+[ ] Track active projects
+[ ] Track completed projects
+[ ] Track testimonials
+[ ] Create basic business profiles
+[ ] Create LinkedIn presence
+[ ] Create Facebook business presence
+[ ] Consider TikTok later
+[ ] Consider Instagram later
+
+Note:
+Social media is not the business.
+Use it as another way for people to find JRC,
+not as something that has to consume time.
+
+
+============================================================
+PHASE 12 — FIRST CUSTOMERS
+============================================================
+
+[ ] Build first portfolio site
+[ ] Build second portfolio site
+[ ] Build third portfolio site
+[ ] Offer initial sites to friends/coworkers/family
+[ ] Use early projects to test the process
+[ ] Get permission to display completed work
+[ ] Get testimonials
+[ ] Add completed sites to JRC portfolio
+[ ] Add links/backlinks where appropriate
+[ ] Start contacting new local businesses
+[ ] Start selling Starter sites
+[ ] Start selling Business sites
+[ ] Start selling Pro sites
+
+
+============================================================
+PHASE 13 — TEMPLATE SYSTEM
+============================================================
+
+DO THIS AFTER THE MAIN JRC SITE IS LIVE.
+
+[ ] Extract Starter template
+[ ] Extract Business template
+[ ] Extract Pro template
+
+STARTER TEMPLATE
+
+[ ] Make independent Starter project
+[ ] Remove JRC demo-only elements
+[ ] Remove demo back button
+[ ] Replace fake business information with obvious placeholders
+[ ] Test standalone deployment
+[ ] Save as master Starter template
+
+BUSINESS TEMPLATE
+
+[ ] Make independent Business project
+[ ] Convert intended 5-page structure properly
+[ ] Remove JRC demo-only elements
+[ ] Remove demo back button
+[ ] Replace fake business information with placeholders
+[ ] Test standalone deployment
+[ ] Save as master Business template
+
+PRO TEMPLATE
+
+[ ] Make independent Pro project
+[ ] Break giant JSX into reusable components where useful
+[ ] Remove JRC demo-only elements
+[ ] Remove demo back button
+[ ] Replace fake business information with placeholders
+[ ] Test standalone deployment
+[ ] Save as master Pro template
+
+FUTURE TEMPLATES
+
+[ ] Create additional templates as needed
+[ ] Build toward approximately 5 good templates
+[ ] Track how long each customer site takes
+[ ] Improve master templates when repetitive work is discovered
+
+
+============================================================
+PHASE 14 — CUSTOMER SITE WORKFLOW
+============================================================
+
+MASTER TEMPLATE
+      ↓
+COPY TEMPLATE
+      ↓
+CHANGE BUSINESS INFORMATION
+      ↓
+CHANGE COLORS
+      ↓
+CHANGE PHOTOS
+      ↓
+CHANGE SERVICES
+      ↓
+CHANGE CONTACT INFORMATION
+      ↓
+TEST PHONE
+      ↓
+TEST DESKTOP
+      ↓
+TEST LINKS / FORM
+      ↓
+GITHUB
+      ↓
+NETLIFY
+      ↓
+CUSTOM DOMAIN
+      ↓
+LAUNCH
+
+[ ] Develop simple repeatable workflow
+[ ] Keep customer-specific information organized
+[ ] Consider src/data/business.js later
+[ ] Avoid unnecessary over-engineering
+[ ] Track build time for each site
+[ ] Improve process after every few sites
+
+
+============================================================
+PHASE 15 — JRC CONTENT
+============================================================
+
+[ ] Add Resources section
+[ ] Add "I Built This" section
+[ ] Add AI/web-development section
+[ ] Explain how JRC uses AI
+[ ] Explain benefits of AI without pretending AI replaces developers
+[ ] Add useful information for small-business owners
+[ ] Add occasional project write-ups
+[ ] Add case studies
+[ ] Add tutorials/resources when useful
+[ ] Keep content practical and human
+
+
+============================================================
+PHASE 16 — SEO / LONG-TERM GROWTH
+============================================================
+
+[ ] Research Colorado Springs web-development searches
+[ ] Improve local SEO
+[ ] Create useful service pages
+[ ] Create industry-specific pages when justified
+[ ] Add internal links
+[ ] Earn legitimate backlinks
+[ ] Get listed in relevant business directories
+[ ] Encourage customers to link to their JRC-built websites
+[ ] Monitor Google Search Console
+[ ] Fix indexing problems
+[ ] Monitor search performance
+[ ] Improve pages based on actual search data
+[ ] Add useful content over time
+[ ] Keep important business information current
+
+
+============================================================
+PHASE 17 — ANALYTICS / IMPROVEMENT
+============================================================
+
+[ ] Add analytics
+[ ] Track website visitors
+[ ] Track contact form submissions
+[ ] Track important CTA clicks
+[ ] See which pages people visit
+[ ] Improve pages based on real usage
+[ ] Remove things nobody uses
+[ ] Add things customers actually ask for
+
+
+============================================================
+PHASE 18 — LONG-TERM JRC
+============================================================
+
+[ ] Build repeatable website business
+[ ] Build recurring Website Care revenue
+[ ] Build reusable templates
+[ ] Reduce time required to build each site
+[ ] Increase quality without dramatically increasing build time
+[ ] Build portfolio
+[ ] Build reputation
+[ ] Develop local business network
+[ ] Eventually expand beyond Colorado Springs if appropriate
+[ ] Continue improving software/web-development skills
+[ ] Consider turning successful tools/processes into products
+[ ] Eventually connect useful JRC systems with BIN when appropriate
+
+
+============================================================
+IMPORTANT PROJECT RULES
+============================================================
+
+1. LAUNCH BEFORE PERFECT.
+
+2. SMALL WINS BEAT GIANT PROJECTS.
+
+3. Do not rebuild things that already work without a good reason.
+
+4. The current demo sites are valuable prototype work.
+   Do not throw them away.
+
+5. JRC launch comes BEFORE extracting the templates.
+
+6. Templates should eventually make customer work faster,
+   not become another giant project.
+
+7. Track actual build time so the process gets better.
+
+8. Don't add complexity just because we can.
+
+9. Build things that customers actually need.
+
+10. Keep JRC human, practical, and a little different
+    from generic corporate web agencies.
+
+11. The goal is not simply to have a cool website.
+    The goal is to use the website to get customers.
+
+12. Once the site is live, improvement becomes an ongoing
+    process rather than a giant "finish the website" project.
