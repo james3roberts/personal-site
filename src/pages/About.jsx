@@ -12,29 +12,29 @@ export default function About() {
 
       <div className="text-gray-800 text-lg leading-relaxed space-y-6">
         <p>
-          I spent over 25 years in construction, specializing in residential 
-          framing and siding work. I understand long days, tight schedules, 
-          demanding customers, and what it takes to keep a small business 
-          running. After years of hands-on work, my body had limits — but my 
+          I spent over 25 years in construction, specializing in residential
+          framing and siding work. I understand long days, tight schedules,
+          demanding customers, and what it takes to keep a small business
+          running. After years of hands-on work, my body had limits — but my
           drive to build didn't. So I switched from tools to technology.
         </p>
 
         <div className="my-8 p-6 bg-blue-50 rounded-lg border-l-4 border-blue-600">
           <p className="font-semibold text-xl mb-2">Why This Matters to You</p>
           <p className="text-gray-700">
-            I'm not going to confuse you with tech jargon or sell you features 
-            you don't need. I speak your language because I've been in your shoes. 
-            When you hire me, you're getting someone who understands what it's like 
-            to run a small business — not just someone who codes.
+            I'm not going to confuse you with tech jargon or sell you features
+            you don't need. I speak your language because I've been in your
+            shoes. When you hire me, you're getting someone who understands what
+            it's like to run a small business — not just someone who codes.
           </p>
         </div>
 
         <p>
           To make that transition real, I earned a four-year Computer Science
-          degree fully online while working full time in construction. 
-          No shortcuts, no in-person help — just me, a laptop, and the 
-          determination to learn how to solve problems with code after 
-          12-hour workdays. That experience taught me more about discipline,
+          degree fully online while working full time in construction. No
+          shortcuts, no in-person help — just me, a laptop, and the
+          determination to learn how to solve problems with code after 12-hour
+          workdays. That experience taught me more about discipline,
           troubleshooting, and persistence than any classroom ever could.
         </p>
 
@@ -53,9 +53,9 @@ export default function About() {
 
         <p>
           If you're ready to upgrade your online presence or get your business
-          online for the first time, let's talk. No sales pressure, no confusing 
-          tech speak — just an honest conversation about what you need and how 
-          I can help.
+          online for the first time, let's talk. No sales pressure, no confusing
+          tech speak — just an honest conversation about what you need and how I
+          can help.
         </p>
 
         {/* CTA Section */}

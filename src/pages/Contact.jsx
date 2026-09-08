@@ -25,7 +25,7 @@ export default function Contact() {
       if (addons.length) {
         msg += `Add-Ons: ${addons
           .map((a) =>
-            a.replace(/([A-Z])/g, " $1").replace(/^./, (s) => s.toUpperCase())
+            a.replace(/([A-Z])/g, " $1").replace(/^./, (s) => s.toUpperCase()),
           )
           .join(", ")}\n`;
       }
@@ -35,7 +35,7 @@ export default function Contact() {
         }\n`;
       }
       msg += `Estimated Total: $${Number(min).toLocaleString()} – $${Number(
-        max
+        max,
       ).toLocaleString()}\n\n`;
       msg += `Additional details:`;
       setMessage(msg);
@@ -63,7 +63,7 @@ export default function Contact() {
       }
     } catch (error) {
       alert(
-        "Something went wrong. Please try emailing me directly at James.dksllc@gmail.com"
+        "Something went wrong. Please try emailing me directly at James.JRCllc@gmail.com",
       );
     }
   };
@@ -218,10 +218,10 @@ export default function Contact() {
           <div className="text-3xl mb-2">✉️</div>
           <h3 className="font-semibold mb-2">Email</h3>
           <a
-            href="mailto:james.dksllc@gmail.com"
+            href="mailto:james.JRCllc@gmail.com"
             className="text-blue-600 text-lg hover:underline break-all"
           >
-            james.dksllc@gmail.com
+            james.JRCllc@gmail.com
           </a>
           <p className="text-sm text-gray-600 mt-1">24-hour response time</p>
         </div>

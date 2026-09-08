@@ -5,11 +5,10 @@ export default function Footer() {
   return (
     <footer className="bg-white shadow p-6 text-gray-600 text-sm mt-auto">
       <div className="max-w-5xl mx-auto flex flex-col items-center space-y-3">
-
         {/* LOGO */}
         <Link to="/" className="flex flex-col items-center group select-none">
           <div className="text-xl font-bold text-blue-700 tracking-tight">
-            DKS
+            JRC
           </div>
           <div
             className="
@@ -22,7 +21,7 @@ export default function Footer() {
               tracking-widest
             "
           >
-            DUMBKIDSSOCIETY
+            JIM ROBERTS CONSTRUCTION
           </div>
         </Link>
 
@@ -50,7 +49,7 @@ export default function Footer() {
 
         {/* COPYRIGHT */}
         <div className="text-gray-500 text-xs mt-1">
-          © {new Date().getFullYear()} DKS Works. All rights reserved.
+          © {new Date().getFullYear()} JRC Works. All rights reserved.
         </div>
       </div>
     </footer>
