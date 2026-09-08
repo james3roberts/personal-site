@@ -10,7 +10,8 @@ GUIDING PRINCIPLE:
 Small wins. Get things working and live rather than
 over-engineering everything before launch.
 
-
+x = Done
+O = Do later
 ============================================================
 PHASE 1 — BRANDING
 ============================================================
@@ -21,10 +22,10 @@ PHASE 1 — BRANDING
 [x] Commit branding changes to Git
 [x] Push branding changes to GitHub
 
-[ ] Center JRC / Jim Roberts Construction properly in navbar
-[ ] Finalize logo treatment
-[ ] Finalize primary JRC colors
-[ ] Make sure branding is consistent throughout the site
+[O] Center JRC / Jim Roberts Construction properly in navbar
+[x] Finalize logo treatment
+[x] Finalize primary JRC colors
+[x] Make sure branding is consistent throughout the site
 
 
 ============================================================
@@ -45,7 +46,7 @@ PHASE 2 — QUICK SITE POLISH
 [ ] Check for obvious placeholder text
 [ ] Remove/update old DKS references
 [ ] Remove unnecessary demo/placeholder content from public pages
-[ ] Make sure phone/email information is correct
+[x] Make sure phone/email information is correct
 [ ] Make sure business name is correct everywhere
 
 
@@ -89,11 +90,11 @@ PHASE 5 — CONTACT PAGE
 [ ] Review existing contact form
 [ ] Shorten form
 [ ] Keep only useful questions
-[ ] Verify form still submits correctly
-[ ] Test successful submission
+[x] Verify form still submits correctly
+[x] Test successful submission
 [ ] Test on mobile
 [ ] Make confirmation/success message clear
-[ ] Make contact information easy to find
+[x] Make contact information easy to find
 [ ] Decide whether to add "How did you hear about us?"
 [ ] Decide where contact submissions should go
 
