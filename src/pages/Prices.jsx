@@ -12,7 +12,7 @@ export default function Prices() {
   const packagePrices = {
     starter: [300, 500],
     business: [750, 1200],
-    pro: [1500, 1500],
+    pro: [1500, 6500],
   };
 
   const addonPrices = {
@@ -74,7 +74,7 @@ export default function Prices() {
 
   const toggleAddon = (addon) => {
     setAddons((prev) =>
-      prev.includes(addon) ? prev.filter((a) => a !== addon) : [...prev, addon]
+      prev.includes(addon) ? prev.filter((a) => a !== addon) : [...prev, addon],
     );
   };
 
@@ -117,10 +117,14 @@ export default function Prices() {
                   checked={addons.includes(key)}
                   onChange={() => toggleAddon(key)}
                 />{" "}
-                {key.replace(/([A-Z])/g, " $1").replace(/^./, (s) => s.toUpperCase())} —{" "}
-                {priceDisplay}
+                {key
+                  .replace(/([A-Z])/g, " $1")
+                  .replace(/^./, (s) => s.toUpperCase())}{" "}
+                — {priceDisplay}
               </label>
-              <p className="text-gray-600 ml-6">{addonPrices[key].description}</p>
+              <p className="text-gray-600 ml-6">
+                {addonPrices[key].description}
+              </p>
             </div>
           );
         })}
@@ -128,7 +132,9 @@ export default function Prices() {
 
       {/* Maintenance */}
       <div className="mb-8">
-        <h2 className="text-2xl font-semibold mb-3">Maintenance & Support (Monthly)</h2>
+        <h2 className="text-2xl font-semibold mb-3">
+          Maintenance & Support (Monthly)
+        </h2>
         {Object.keys(maintenancePrices).map((key) => (
           <div key={key} className="mb-2">
             <label className="block">
@@ -138,13 +144,22 @@ export default function Prices() {
                 value={key}
                 onChange={() => setMaintenance(key)}
               />{" "}
-              {key.charAt(0).toUpperCase() + key.slice(1)} — ${maintenancePrices[key].price}/mo
+              {key.charAt(0).toUpperCase() + key.slice(1)} — $
+              {maintenancePrices[key].price}/mo
             </label>
-            <p className="text-gray-600 ml-6">{maintenancePrices[key].description}</p>
+            <p className="text-gray-600 ml-6">
+              {maintenancePrices[key].description}
+            </p>
           </div>
         ))}
         <label className="block mt-1">
-          <input type="radio" name="maintenance" value="" onChange={() => setMaintenance("")} /> No monthly support
+          <input
+            type="radio"
+            name="maintenance"
+            value=""
+            onChange={() => setMaintenance("")}
+          />{" "}
+          No monthly support
         </label>
       </div>
 
@@ -152,7 +167,9 @@ export default function Prices() {
       <div className="text-center my-6">
         <h3 className="text-xl font-bold mb-2">Current Estimated Total</h3>
         <p className="text-lg font-semibold">
-          {min > 0 ? `$${min.toLocaleString()} – $${max.toLocaleString()}` : "Select a package to see total"}
+          {min > 0
+            ? `$${min.toLocaleString()} – $${max.toLocaleString()}`
+            : "Select a package to see total"}
         </p>
       </div>
 
@@ -172,9 +189,13 @@ export default function Prices() {
           <div className="bg-white rounded-lg p-6 max-w-md w-full relative">
             <h2 className="text-2xl font-bold mb-4 text-center">Your Quote</h2>
             <div className="mb-4">
-              <p><strong>Package:</strong> {packageType || "None selected"}</p>
+              <p>
+                <strong>Package:</strong> {packageType || "None selected"}
+              </p>
 
-              <p><strong>Add-Ons:</strong></p>
+              <p>
+                <strong>Add-Ons:</strong>
+              </p>
               {addons.length > 0 ? (
                 <ul className="ml-4 list-disc">
                   {addons.map((addon) => {
@@ -184,7 +205,10 @@ export default function Prices() {
                       : `$${price}`;
                     return (
                       <li key={addon}>
-                        {addon.replace(/([A-Z])/g, " $1").replace(/^./, (s) => s.toUpperCase())} — {addonPrices[addon].description} ({priceDisplay})
+                        {addon
+                          .replace(/([A-Z])/g, " $1")
+                          .replace(/^./, (s) => s.toUpperCase())}{" "}
+                        — {addonPrices[addon].description} ({priceDisplay})
                       </li>
                     );
                   })}
@@ -195,11 +219,15 @@ export default function Prices() {
 
               <p>
                 <strong>Maintenance:</strong> {maintenance || "None"}{" "}
-                {maintenance && `(${maintenancePrices[maintenance].description})`}
+                {maintenance &&
+                  `(${maintenancePrices[maintenance].description})`}
               </p>
 
               <p className="mt-2 text-lg font-bold">
-                Total: {min > 0 ? `$${min.toLocaleString()} – $${max.toLocaleString()}` : "Select a package"}
+                Total:{" "}
+                {min > 0
+                  ? `$${min.toLocaleString()} – $${max.toLocaleString()}`
+                  : "Select a package"}
               </p>
             </div>
 
@@ -215,8 +243,8 @@ export default function Prices() {
                   setIsModalOpen(false);
                   navigate(
                     `/contact?package=${packageType}&addons=${addons.join(
-                      ","
-                    )}&maintenance=${maintenance}&min=${min}&max=${max}`
+                      ",",
+                    )}&maintenance=${maintenance}&min=${min}&max=${max}`,
                   );
                 }}
                 className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"

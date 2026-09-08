@@ -15,13 +15,14 @@ export default function Projects() {
           Live demos and examples will appear here as projects are completed.
         </p>
 
-        {/* Coming soon box */}
+        {/* Coming soon box 
         <div className="bg-white shadow rounded-lg p-10 text-center">
           <h3 className="text-xl font-medium mb-2">Coming Soon</h3>
           <p className="text-gray-600">
             Starter site demos will be added here soon.
           </p>
         </div>
+        */}
       </section>
 
       {/* 
@@ -32,17 +33,18 @@ export default function Projects() {
       <section className="mb-16">
         <h2 className="text-3xl font-semibold mb-4">Business Sites</h2>
         <p className="text-gray-600 mb-6">
-          Multi-page websites for companies offering multiple services.
-          These are perfect for growing teams or contractors with several service areas.
+          Multi-page websites for companies offering multiple services. These
+          are perfect for growing teams or contractors with several service
+          areas.
         </p>
 
-        {/* Coming soon box */}
+        {/* Coming soon box 
         <div className="bg-white shadow rounded-lg p-10 text-center">
           <h3 className="text-xl font-medium mb-2">Coming Soon</h3>
           <p className="text-gray-600">
             Business site examples will be added here as they are completed.
           </p>
-        </div>
+        </div>*/}
       </section>
 
       {/* 
@@ -57,13 +59,13 @@ export default function Projects() {
           blogs, or anything needed to compete at a high level.
         </p>
 
-        {/* Coming soon box */}
+        {/* Coming soon box 
         <div className="bg-white shadow rounded-lg p-10 text-center">
           <h3 className="text-xl font-medium mb-2">Coming Soon</h3>
           <p className="text-gray-600">
             Pro-level sites will appear here as they are delivered.
           </p>
-        </div>
+        </div> */}
       </section>
 
       {/* 
@@ -78,14 +80,13 @@ export default function Projects() {
           built outside traditional websites.
         </p>
 
-        {/* Coming soon box */}
+        {/* Coming soon box 
         <div className="bg-white shadow rounded-lg p-10 text-center">
           <h3 className="text-xl font-medium mb-2">Coming Soon</h3>
           <p className="text-gray-600">
-            Custom software projects will be added here soon (including the
-            lineman dashboard you're working on).
+            Custom software projects will be added here soon.
           </p>
-        </div>
+        </div>*/}
       </section>
 
       {/* 
@@ -101,6 +102,13 @@ export default function Projects() {
           ...
         </div>
       */}
+      <section className="bg-white shadow rounded-lg p-10 text-center mt-8">
+        <h3 className="text-xl font-medium mb-2">Portfolio Coming Soon</h3>
+        <p className="text-gray-600">
+          JRC is currently building its portfolio with real project for small
+          businesses. New projects will appear as they are completed.
+        </p>
+      </section>
     </div>
   );
 }

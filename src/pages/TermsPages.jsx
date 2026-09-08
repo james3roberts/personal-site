@@ -7,7 +7,7 @@ import React from "react";
  */
 
 const BUSINESS_NAME = "JRC Works"; // <-- replace if needed
-const BUSINESS_EMAIL = "you@yourdomain.com"; // <-- replace this
+const BUSINESS_EMAIL = "JimRobertsConstruction@gmail.com.com"; // <-- replace this
 const BUSINESS_URL = "https://yourdomain.com"; // <-- replace this
 const LAST_UPDATED = "November 29, 2025";
 

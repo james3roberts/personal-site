@@ -22,7 +22,7 @@ PHASE 1 — BRANDING
 [x] Commit branding changes to Git
 [x] Push branding changes to GitHub
 
-[O] Center JRC / Jim Roberts Construction properly in navbar
+[x] Center JRC / Jim Roberts Construction properly in navbar
 [x] Finalize logo treatment
 [x] Finalize primary JRC colors
 [x] Make sure branding is consistent throughout the site
@@ -32,22 +32,22 @@ PHASE 1 — BRANDING
 PHASE 2 — QUICK SITE POLISH
 ============================================================
 
-[ ] Replace default Vite favicon
-[ ] Create/use a proper JRC favicon
-[ ] Check browser tab title
-[ ] Check desktop layout
-[ ] Check mobile layout
-[ ] Check tablet-sized layout
-[ ] Check navbar on mobile
-[ ] Check buttons and links
-[ ] Check footer
-[ ] Check all navigation links
-[ ] Check for broken links
-[ ] Check for obvious placeholder text
-[ ] Remove/update old DKS references
-[ ] Remove unnecessary demo/placeholder content from public pages
+[O] Replace default Vite favicon at index.html line 5
+[O] Create/use a proper JRC favicon
+[x] Check browser tab title
+[x] Check desktop layout
+[x] Check mobile layout
+[x] Check tablet-sized layout
+[x] Check navbar on mobile
+[x] Check buttons and links
+[x] Check footer
+[x] Check all navigation links
+[x] Check for broken links
+[x] Check for obvious placeholder text
+[x] Remove/update old DKS references
+[x] Remove unnecessary demo/placeholder content from public pages
 [x] Make sure phone/email information is correct
-[ ] Make sure business name is correct everywhere
+[x] Make sure business name is correct everywhere
 
 
 ============================================================
@@ -152,8 +152,10 @@ PHASE 8 — PROJECTS / PORTFOLIO
 PHASE 9 — LEGAL / BASIC SEO
 ============================================================
 
-[ ] Review Privacy page
-[ ] Review Terms page
+[x] Review Privacy page
+[x] Review Terms page
+[ ] Make cookie button in footer work
+[ ] Add google analytics
 [ ] Make sure legal/business information is appropriate
 [ ] Add proper page titles
 [ ] Add meta descriptions

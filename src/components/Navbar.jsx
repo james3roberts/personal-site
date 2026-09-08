@@ -44,19 +44,19 @@ export default function Navbar() {
         </div> */}
 
         {/* Logo */}
-        <div className="flex flex-col leading-none">
+        <div className="flex flex-col items-center leading-none">
           <div className="text-2xl font-bold text-blue-700">JRC</div>
 
           {/* Hidden-in-plain-sight subtext */}
           <div
             className="
-    text-[6px] 
+    text-[7px] 
     font-semibold 
     text-neutral-700 
-    opacity-30 
+    opacity-40 
     tracking-tight 
-    -mt-1
-    blur-[0.2px]
+    -mt-0.5
+    whitespace-nowrap
   "
           >
             JIM ROBERTS CONSTRUCTION
