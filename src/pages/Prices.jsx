@@ -33,10 +33,10 @@ export default function Prices() {
   };
 
   const addonPrices = {
-    logo: { price: [50, 150], description: "Logo cleanup or simple redesign" },
+    logo: { price: [50], description: "Logo cleanup or adjustment" },
     gallery: { price: 75, description: "Photo gallery setup" },
     blog: { price: 75, description: "Blog setup" },
-    forms: { price: [50, 100], description: "Additional forms" },
+    forms: { price: [50], description: "One additional contact or quote form" },
   };
 
   const maintenancePrices = {
@@ -58,35 +58,25 @@ export default function Prices() {
 
   // ------- Calculate total -------
   const calculateTotal = () => {
-    let min = 0;
-    let max = 0;
+    let total = 0;
+    let monthly = 0;
 
     if (packageType && packageOption) {
-      const packagePrice = packagePrices[packageType].options[packageOption];
-      min += packagePrice;
-      max += packagePrice;
+      total += packagePrices[packageType].options[packageOption];
     }
 
     addons.forEach((addon) => {
-      const price = addonPrices[addon].price;
-      if (Array.isArray(price)) {
-        min += price[0];
-        max += price[1];
-      } else {
-        min += price;
-        max += price;
-      }
+      total += addonPrices[addon].price;
     });
 
     if (maintenance) {
-      min += maintenancePrices[maintenance].price;
-      max += maintenancePrices[maintenance].price;
+      monthly += maintenancePrices[maintenance].price;
     }
 
-    return { min, max };
+    return { total, monthly };
   };
 
-  const { min, max } = calculateTotal();
+  const { total, monthly } = calculateTotal();
 
   const toggleAddon = (addon) => {
     setAddons((prev) =>
@@ -195,23 +185,21 @@ export default function Prices() {
       </div>
 
       {/* Live total display */}
+      {/* Live total display */}
       <div className="text-center my-6">
-        <h3 className="text-xl font-bold mb-2">Current Estimated Total</h3>
+        <h3 className="text-xl font-bold mb-2">Estimated Total</h3>
+
         <p className="text-lg font-semibold">
-          {min > 0
-            ? `$${min.toLocaleString()} – $${max.toLocaleString()}`
+          {total > 0
+            ? `$${total.toLocaleString()}`
             : "Select a package to see total"}
         </p>
-      </div>
 
-      {/* Get a Free Quote button */}
-      <div className="text-center mt-4">
-        <button
-          onClick={() => setIsModalOpen(true)}
-          className="bg-blue-600 text-white px-8 py-4 rounded-lg text-lg hover:bg-blue-700 transition"
-        >
-          Get a Free Quote
-        </button>
+        {monthly > 0 && (
+          <p className="text-md text-gray-600 mt-1">
+            + ${monthly.toLocaleString()}/month for Website Care
+          </p>
+        )}
       </div>
 
       {/* Modal */}
