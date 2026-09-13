@@ -5,7 +5,26 @@ DOMAIN
 ☐ Purchase/connect custom domain
 ☐ Update sitemap.xml to final domain
 ☐ Update robots.txt to final domain
-☐ Update any remaining site URLs/emails to final domain
+☐ Update remaining site URLs/emails to final domain
+
+LOGO
+☐ Create/finalize JRC logo
+☐ Create JRC favicon
+
+CLIENT TEMPLATES
+☐ Convert Starter demo into reusable Starter template
+☐ Convert Business demo into reusable Business template
+☐ Convert Pro demo into reusable Pro template
+☐ Remove demo-specific content/placeholders
+☐ Make client customization straightforward
+☐ Test each template with a different fictional business
+
+AI WEBSITE FINISHING
+☐ Decide exactly what JRC's AI finishing service includes
+☐ Set prices for AI website finishing/rework
+☐ Write customer-facing descriptions
+☐ Add AI finishing/rework to pricing page
+☐ Add AI finishing/rework to calculator if appropriate
 
 ANALYTICS & SEO
 ☐ Set up Google Search Console
@@ -19,8 +38,6 @@ FINAL LAUNCH
 ☐ Final launch check
 
 FUTURE
-☐ Create JRC favicon
-☐ Add real customer projects as they are completed
-☐ Add AI rework / "AI doesn't finish the job" messaging
-☐ Add future resources / "Built by JRC" content
+☐ Add real customer projects as completed
+☐ Add resources / "Built by JRC" content
 ☐ Add other ideas as JRC grows
