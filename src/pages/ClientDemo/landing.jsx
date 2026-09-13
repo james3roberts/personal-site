@@ -142,6 +142,41 @@ export default function Landing() {
 
         {/* Service Area */}
 
+        <section className="py-16 px-4 bg-gray-50">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl font-bold mb-4">
+              Proudly Serving Colorado Springs
+            </h2>
+
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-6">
+              Peak Heating & Air proudly serves homeowners and businesses
+              throughout Colorado Springs and the surrounding communities.
+            </p>
+
+            <div className="flex flex-wrap justify-center gap-3">
+              <span className="bg-white px-4 py-2 rounded-lg shadow-sm">
+                Colorado Springs
+              </span>
+
+              <span className="bg-white px-4 py-2 rounded-lg shadow-sm">
+                Fountain
+              </span>
+
+              <span className="bg-white px-4 py-2 rounded-lg shadow-sm">
+                Monument
+              </span>
+
+              <span className="bg-white px-4 py-2 rounded-lg shadow-sm">
+                Falcon
+              </span>
+
+              <span className="bg-white px-4 py-2 rounded-lg shadow-sm">
+                Manitou Springs
+              </span>
+            </div>
+          </div>
+        </section>
+
         {/* Contact Section */}
         <section className="py-16 px-4">
           <div className="max-w-2xl mx-auto text-center">
