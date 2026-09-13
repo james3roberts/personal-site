@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 export default function Prices() {
   const [packageType, setPackageType] = useState("");
+  const [packageOption, setPackageOption] = useState("");
   const [addons, setAddons] = useState([]);
   const [maintenance, setMaintenance] = useState("");
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -10,9 +11,25 @@ export default function Prices() {
 
   // ------- Prices -------
   const packagePrices = {
-    starter: [300, 500],
-    business: [750, 1200],
-    pro: [1500, 6500],
+    starter: {
+      options: {
+        "3 sections": 300,
+        "5 sections": 400,
+        "7 sections": 500,
+      },
+    },
+    business: {
+      options: {
+        "3 pages": 750,
+        "4 pages": 950,
+        "5 pages": 1200,
+      },
+    },
+    pro: {
+      options: {
+        Custom: 1500,
+      },
+    },
   };
 
   const addonPrices = {
@@ -46,9 +63,10 @@ export default function Prices() {
     let min = 0;
     let max = 0;
 
-    if (packageType) {
-      min += packagePrices[packageType][0];
-      max += packagePrices[packageType][1];
+    if (packageType && packageOption) {
+      const packagePrice = packagePrices[packageType].options[packageOption];
+      min += packagePrice;
+      max += packagePrice;
     }
 
     addons.forEach((addon) => {
@@ -87,17 +105,32 @@ export default function Prices() {
       {/* Package selection */}
       <div className="mb-8">
         <h2 className="text-2xl font-semibold mb-3">Choose Your Package</h2>
+
         {Object.keys(packagePrices).map((pkg) => (
-          <label key={pkg} className="block mb-1">
-            <input
-              type="radio"
-              name="package"
-              value={pkg}
-              onChange={() => setPackageType(pkg)}
-            />{" "}
-            {pkg.charAt(0).toUpperCase() + pkg.slice(1)} Site ($
-            {packagePrices[pkg][0]} – ${packagePrices[pkg][1]})
-          </label>
+          <div key={pkg} className="mb-6">
+            <h3 className="text-xl font-semibold capitalize mb-2">
+              {pkg} Site
+            </h3>
+
+            {Object.entries(packagePrices[pkg].options).map(
+              ([option, price]) => (
+                <label key={option} className="block mb-2">
+                  <input
+                    type="radio"
+                    name="package"
+                    value={`${pkg}-${option}`}
+                    checked={packageType === pkg && packageOption === option}
+                    onChange={() => {
+                      setPackageType(pkg);
+                      setPackageOption(option);
+                    }}
+                  />{" "}
+                  {option} —{" "}
+                  {pkg === "pro" ? `Starting at $${price}` : `$${price}`}
+                </label>
+              ),
+            )}
+          </div>
         ))}
       </div>
 
