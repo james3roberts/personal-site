@@ -32,7 +32,7 @@ PHASE 1 — BRANDING
 PHASE 2 — QUICK SITE POLISH
 ============================================================
 
-[X] Replace default Vite favicon at index.html line 5
+[O] Replace default Vite favicon at index.html line 5
 [O] Create/use a proper JRC favicon
 [x] Check browser tab title
 [x] Check desktop layout
@@ -56,14 +56,14 @@ PHASE 3 — NAVIGATION
 
 [ ] Review navbar layout
 [ ] Review navbar spacing
-[ ] Center JRC branding
+[X] Center JRC branding
 [ ] Review mobile menu
 [ ] Review active-page indicators
 [ ] Review navigation labels
 [ ] Decide whether Client Demo should remain public
 [ ] Consider adding Resources
 [ ] Consider adding "I Built This"
-[ ] Make sure every navigation link works
+[X] Make sure every navigation link works
 
 
 ============================================================
@@ -87,9 +87,9 @@ PHASE 4 — HOMEPAGE
 PHASE 5 — CONTACT PAGE
 ============================================================
 
-[ ] Review existing contact form
-[ ] Shorten form
-[ ] Keep only useful questions
+[X] Review existing contact form
+[X] Shorten form
+[X] Keep only useful questions
 [x] Verify form still submits correctly
 [x] Test successful submission
 [ ] Test on mobile
@@ -135,7 +135,7 @@ PHASE 7 — ABOUT PAGE
 PHASE 8 — PROJECTS / PORTFOLIO
 ============================================================
 
-[ ] Review Projects page
+[X] Review Projects page
 [ ] Decide how portfolio projects should be displayed
 [ ] Add first real customer project
 [ ] Add project screenshots
@@ -179,7 +179,7 @@ PHASE 10 — DOMAIN / LAUNCH
 [ ] Verify HTTPS/SSL
 [ ] Set preferred domain
 [ ] Verify www/non-www behavior
-[ ] Make sure Netlify deployment works
+[X] Make sure Netlify deployment works
 [ ] Verify production site on desktop
 [ ] Verify production site on phone
 [ ] Test every major link
