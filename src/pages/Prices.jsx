@@ -184,19 +184,24 @@ export default function Prices() {
       </div>
 
       {/* Live total display */}
-      {/* Live total display */}
       <div className="text-center my-6">
-        <h3 className="text-xl font-bold mb-2">Estimated Total</h3>
+        <h3 className="text-xl font-bold mb-2">Estimated Total Today</h3>
 
         <p className="text-lg font-semibold">
           {total > 0
-            ? `$${total.toLocaleString()}`
+            ? `$${(total + monthly).toLocaleString()}`
             : "Select a package to see total"}
         </p>
 
         {monthly > 0 && (
           <p className="text-md text-gray-600 mt-1">
-            + ${monthly.toLocaleString()}/month for Website Care
+            ${total.toLocaleString()} website + ${monthly.toLocaleString()}first
+            month of website care
+          </p>
+        )}
+        {monthly > 0 && (
+          <p className="text-sm text-gray-500 mt-1">
+            Website Care continues at ${monthly.toLocaleString()}/month
           </p>
         )}
       </div>
