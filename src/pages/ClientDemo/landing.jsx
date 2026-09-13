@@ -112,6 +112,36 @@ export default function Landing() {
           </div>
         </section>
 
+        {/* Testimonials */}
+        <section ClassName="py-16 px-4 bg-white">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold text-center mb-12">
+              What Our Customers Say
+            </h2>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
+                <p className="text-gray-600 mb-4">
+                  "Peak Heating & Air got our furnace running again quickly and
+                  explained everything clearly. No pressure, no surprises."
+                </p>
+                <p className="font-semibold">— Sarah M., Colorado Springs</p>
+              </div>
+
+              <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
+                <p className="text-gray-600 mb-4">
+                  "Great service from start to finish. They showed up when they
+                  said they would and got our AC working before the next hot
+                  day."
+                </p>
+
+                <p className="font-semibold">— Mike R., Colorado Springs</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Service Area */}
+
         {/* Contact Section */}
         <section className="py-16 px-4">
           <div className="max-w-2xl mx-auto text-center">
