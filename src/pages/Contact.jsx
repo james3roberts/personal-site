@@ -2,6 +2,9 @@ import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 export default function Contact() {
+  useEffect(() => {
+    document.title = "Contact JRC | Colorado Springs Web Design";
+  }, []);
   const location = useLocation();
   const [submitted, setSubmitted] = useState(false);
 

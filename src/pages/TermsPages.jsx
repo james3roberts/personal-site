@@ -4,6 +4,9 @@ const BUSINESS_URL = "https://jrcwebsite.netlify.app/";
 const LAST_UPDATED = "September 13, 2026";
 
 export default function Terms() {
+  useEffect(() => {
+    document.title = "Terms JRC | Colorado Springs Web Design";
+  }, []);
   return (
     <div className="p-8 max-w-4xl mx-auto">
       <h1 className="text-3xl font-bold mb-4">Terms of Service</h1>

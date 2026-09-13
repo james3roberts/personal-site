@@ -2,6 +2,9 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 export default function Prices() {
+  useEffect(() => {
+    document.title = "Prices JRC | Colorado Springs Web Design";
+  }, []);
   const [packageType, setPackageType] = useState("");
   const [packageOption, setPackageOption] = useState("");
   const [addons, setAddons] = useState([]);
