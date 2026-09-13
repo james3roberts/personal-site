@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import { FaPhone, FaEnvelope } from "react-icons/fa";
 
 export default function Landing() {
   const navigate = useNavigate();
@@ -113,7 +113,7 @@ export default function Landing() {
         </section>
 
         {/* Testimonials */}
-        <section ClassName="py-16 px-4 bg-white">
+        <section className="py-16 px-4 bg-white">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-center mb-12">
               What Our Customers Say
@@ -199,12 +199,6 @@ export default function Landing() {
                 >
                   info@peakheating.com
                 </a>
-              </div>
-              <div className="flex items-center justify-center gap-3 text-lg">
-                <FaMapMarkerAlt className="text-blue-600" />
-                <span className="text-gray-700">
-                  Serving Colorado Springs & Surrounding Areas
-                </span>
               </div>
             </div>
 
