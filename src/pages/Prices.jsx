@@ -33,10 +33,9 @@ export default function Prices() {
   };
 
   const addonPrices = {
-    logo: { price: [50], description: "Logo cleanup or adjustment" },
     gallery: { price: 75, description: "Photo gallery setup" },
     blog: { price: 75, description: "Blog setup" },
-    forms: { price: [50], description: "One additional contact or quote form" },
+    forms: { price: 50, description: "One additional contact or quote form" },
   };
 
   const maintenancePrices = {
