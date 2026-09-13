@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 export default function About() {
+  useEffect(() => {
+    document.title = "About JRC | Colorado Springs Web Design";
+  }, []);
   return (
     <div className="max-w-3xl mx-auto px-4 py-16">
       <p className="text-center text-blue-600 font-semibold mb-2 text-lg">
